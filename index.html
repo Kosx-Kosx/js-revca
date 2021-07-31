@@ -21,10 +21,11 @@
     <!--
     <input id="debug-txt"></input>
     -->
-    <div class="toolbar" id="toolbar-parameters">
+<div class="toolbar" id="toolbar-parameters">
       Rule: <select id="select-rule"></select> 
       Step: 
       <select id="speed-show-every">
+        <option value="0,5">0,5</option>
 	<option value="1">1</option>
 	<option value="2">2</option>
 	<option value="4">4</option>
@@ -40,8 +41,10 @@
       Delay:
       <select id="speed-frame-delay">
 	<option value="10">10ms</option>
-	<option value="50">50ms</option>
-	<option value="100" selected="selected">100ms</option>
+	<option value="20">20ms</option>
+	<option value="30">30ms</option>
+	<option value="50" selected="selected">50ms</option>
+	<option value="100">100ms</option>
 	<option value="200">200ms</option>
 	<option value="1000">1s</option>
       </select>.
@@ -59,6 +62,8 @@
 	<option value="[128,128]">128 x 128</option>
 	<option value="[256,256]">256 x 256</option>
 	<option value="[600,200]">600 x 200</option>
+	<option value="[800,400]">800 x 400</option>
+	<option value="[1000,800]">1000 x 800</option>
       </select> cells.
     </div>
     <div id="main-window" class="panel"> <!-- window that contains tools etc -->
